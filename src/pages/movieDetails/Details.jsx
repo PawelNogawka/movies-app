@@ -13,7 +13,7 @@ import ReviewForm from "./ReviewForm";
 
 import classes from "./Details.module.scss";
 
-const Details = ({ movie }) => {
+const Details = ({ movie, user }) => {
   const {
     title,
     poster_path,
@@ -96,7 +96,7 @@ const Details = ({ movie }) => {
                 </span>
               </div>
             )}
-            <ReviewForm movieTitle={title} />
+            {user && <ReviewForm movieTitle={title} />}
           </div>
         </div>
       </Wrapper>

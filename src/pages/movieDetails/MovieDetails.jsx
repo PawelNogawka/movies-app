@@ -54,7 +54,7 @@ const MovieDetails = () => {
           <p className={classes.desc}>{overview}</p>
         </div>
       </section>
-      {data && <Details movie={data}/>}
+      {data && <Details movie={data} user={user} />}
       {user &&  <Reviews movieTitle ={title} />}
      
       {production_companies && production_companies.length > 3 &&  (
