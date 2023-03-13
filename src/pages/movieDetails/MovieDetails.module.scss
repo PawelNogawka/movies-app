@@ -1,0 +1,77 @@
+@import '../../variables';
+
+.movie {
+  margin-top: 1rem;
+
+  .ban {
+    height: calc(100vh - 8rem);
+  }
+
+  .hero {
+    position: absolute;
+    left: 0;
+    top: 8rem;
+    width: 100%;
+    height: calc(100vh - 8rem);
+    object-fit: cover;
+    filter: brightness(70%) contrast(120%);
+    z-index: -2;
+  }
+
+  .backdrop {
+    position: absolute;
+    left: 0;
+    top: 8rem;
+    width: 100%;
+    height: calc(100vh - 8rem);
+    z-index: 100;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0)
+    );
+    z-index: -1;
+  }
+
+  .banner {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .heading {
+    margin-bottom: 4rem;
+    color: $light-text;
+    font-size: min(8vw, 5rem);
+    text-transform: capitalize;
+    letter-spacing: 0.02rem;
+    text-align: center;
+  }
+
+  .desc {
+    color: $light-text;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 155%;
+  }
+}
+
+@media (min-width: 768px) {
+  .movie {
+    margin-top: 8rem;
+
+    .heading {
+      margin-bottom: 7rem;
+    }
+
+    .banner {
+      width: 60%;
+    }
+
+    .feature-heading {
+      font-size: 2.4rem;
+    }
+  }
+}

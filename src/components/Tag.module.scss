@@ -1,0 +1,10 @@
+@import "../variables";
+
+.tag {
+  padding: 0.6rem;
+  background-color: $main;
+  font-size: 1.5rem;
+  color:$light-text;
+  text-transform: capitalize;
+  border-radius: .5rem;
+}

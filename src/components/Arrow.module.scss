@@ -1,0 +1,26 @@
+@import '../variables';
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%);
+    width: 3rem;
+    height: 4rem;
+    overflow: hidden;
+    z-index: 20000000;
+  
+    svg {
+      font-size: 3.4rem;
+      color: $light-text;
+      animation: arrow1s ease-in-out forwards;
+      transform: translateY(-3rem);
+      animation: arrow 1.9s infinite linear;
+    }
+  }
+  
+  @keyframes arrow {
+    100% {
+      transform: translateY(5rem);
+    }
+  }

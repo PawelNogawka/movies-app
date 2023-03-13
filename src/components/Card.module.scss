@@ -1,0 +1,63 @@
+@import '../variables';
+
+
+.card{
+    flex: 1 1 30rem;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+   // justify-content: space-between;
+    border:.1rem solid $secondary;
+    border-radius: 1rem;
+    box-shadow: $card-shadow;
+    overflow: hidden;
+
+    .bottom{
+        flex-grow: 1;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+
+    .poster{
+        width: 100%;
+    }
+
+    .title{
+        margin-bottom: 2rem;
+        color:$light-text;
+        font-size:2.4rem;
+        line-height: 155%;
+        word-wrap: break-word;
+    }
+
+    .desc{
+        flex-grow:1;
+        margin-bottom: 2rem;
+        color:$dark-text;
+        font-size:1.5rem;
+        line-height: 155%;
+    }
+
+    .btns{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .heart{
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg{
+            color:$error;
+            font-size:3.2rem;
+        }
+    }
+}

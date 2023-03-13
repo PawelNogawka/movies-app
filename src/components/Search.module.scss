@@ -1,0 +1,63 @@
+@import "../variables";
+
+.form {
+  position: relative;
+  .input {
+    padding-left: 3.1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 0.8rem;
+    border-radius: 1rem;
+    background-color: $light-text;
+    font-size: 1.5rem;
+    transition: box-shadow 0.3s ease;
+
+    &:focus {
+      box-shadow: $main 0px 3px 3px, $main 0px 0px 0px 3px;
+    }
+
+    &::placeholder {
+      color: #1d293e;
+    }
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    svg {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+
+
+@media (max-width: 552px) {
+  .form {
+    .input {
+      width: 10rem;
+    }
+  }
+}
+
+@media (max-width: 382px) {
+  .form {
+    display: none;
+  }
+  .mobile{
+    display: block;
+    .input {
+      width: 20rem;
+    }
+  }
+}

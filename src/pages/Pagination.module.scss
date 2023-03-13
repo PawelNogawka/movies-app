@@ -1,0 +1,29 @@
+@import '../variables';
+
+.pagination {
+    padding: 3.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    button {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .3rem;
+        font-size: 1.6rem;
+        background-color: #7B8EA9;
+        color: $light-text;
+        transition: .2s ease;
+
+        &:hover {
+            background-color: #4F6C88;
+        }
+    }
+
+    .active {
+        background-color: #455E7B;
+    }
+}

@@ -1,0 +1,44 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 10rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $background;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: 0;
+}
+
+input:focus{
+  outline: unset;
+}
+
+input{
+  border: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+.active{
+  background-color: red;
+}
