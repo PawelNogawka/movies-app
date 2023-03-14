@@ -2,7 +2,7 @@ The application uses TMDB API and Firebase.
 
 The user can search for and read information about any movies. After registering, the user can add reviews and add movies to favorites.
 
-live site : https://remarkable-sprite-c02244.netlify.app
+live site : https://hilarious-froyo-9cc1bd.netlify.app
 
 
 
